@@ -15,6 +15,12 @@ hr {
     border: none;
     border-top: 1px solid #DEDEDE;
 }
+ul,ol {
+    list-style: none;
+}
+h3 {
+    font-weight: normal;
+}
 .clearfix::after{
     content: '';
     display: block;
@@ -86,10 +92,11 @@ hr {
 }
 .userCard {
     background: white;
-    border: 1px solid red;
     max-width: 940px;/*自适应 最大940px*/
     margin-left: auto;
     margin-right: auto;
+    margin-top: -378px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
 }
 .userCard .welcome {
     background: #E86867;
@@ -160,4 +167,136 @@ hr {
     height: 30px;
     fill: white;
     vertical-align: top;
+}
+body > main .downloadResume {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #CBCDCF;
+    display: inline-block;
+    background: #EFEFEF;
+    border-radius: 2px;
+    color: #3E4551;
+    font-weight: bold;
+    margin: 32px;
+    transition: box-shadow 0.3s;
+}
+body > main .downloadResume:hover {
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.2);
+}
+main > .downloadButton {
+    text-align: center;
+}
+.selfIntroduction {
+    max-width: 940px;/*自适应 最大940px*/
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    text-align: center;
+    font-family: kai;
+}
+section.skills ,
+section.portfolio {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.skills > h2,
+section.portfolio > h2 {
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+}
+section.skills h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+section.skills > ol {
+    background: white;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    padding: 42px 50px 10px;
+    margin-top: 30px;
+}
+section.skills > ol > li {
+    float: left;
+    width: 48%;
+    box-sizing: border-box;    /*该属性使宽度100%算border在里面*/
+    padding-right: 40px;
+
+}
+section.skills > ol > li:nth-child(even) {/*意思是li元素中的偶数状态(伪类)*/
+    float: right;
+}
+section.skills .progressBar {
+    height: 5px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    margin: 4px 0 40px;
+}
+section.skills .progressBar .progress {
+    height: 5px;
+    background: #E86867;
+    width: 40%;
+    border-radius: 2px;
+}
+section.portfolio {
+    text-align: center;
+}
+section.portfolio > nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+}
+section.portfolio > nav > ol {
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;/*加了inline-block 会使上下两侧空隙不同*/
+    vertical-align: top;/*所以要加这句话来修复这个BUG*/
+}
+section.portfolio > nav > ol > li {
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+section.portfolio > nav > ol > li:nth-child(1) {
+    margin-left: 0;
+}
+section.portfolio > nav .bar {
+    display: block;
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    border-radius: 2px;
+    margin-bottom: 28px;
+}
+section.portfolio > nav .bar-inner {
+    height: 100%;
+    background: #E86867;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+section.portfolio > nav .bar.state-1 .bar-inner {
+    margin-left: 0;
+    width: 30px;
+}
+section.portfolio > nav .bar.state-2 .bar-inner {
+    margin-left: 72px;
+    width: 65px;
+}
+section.portfolio > nav .bar.state-3 .bar-inner {
+    margin-left: 175px;
+    width: 50px;
+}
+section.portfolio .works {
+    position: relative;
+    margin-bottom: 100px;
+}
+section.portfolio .works > .big,
+section.portfolio .works > .small {
+    position: absolute;
 }
