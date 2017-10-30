@@ -6,62 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>韩磊的前端简历</title>
     <link rel="stylesheet" href="./a.css">
+    <script src="//at.alicdn.com/t/font_457849_oyeaq2rw17mhd7vi.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div class="topNavBar clearfix">
-        <a class="logo" href="#" alt="logo" style="float: left;">
-            <span class="rs">RS</span><span class="card">card</span>
-        </a>
-        <nav style="float: right">
-            <ul class = "clearfix">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其他</a></li>
-            </ul>
-        </nav>
+    <div class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a class="logo" href="#" alt="logo" style="float: left;">
+                 <span class="rs">RS</span><span class="card">card</span>
+            </a>
+            <nav style="float: right">
+                <ul class = "clearfix">
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">技能</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>   
+        </div>    
     </div>
-    <div class="banner" style="background-image: url(# )"></div>
+    <div class= "banner">
+        <div class="mask"></div>
+    </div>
     <main>
-        <div class="card">
-            <div class="pictureAndText">
+        <div class="userCard">
+            <div class="pictureAndText clearfix">
                 <div class="picture">
-                    <img src="" alt="头像">
+                    <img src="./img/head.jpg" width=299 height=347 alt="头像">
                 </div>
                 <div class="text">
-                    <div class="profile">
-                        <span class="weclome">Hello</span>
-                        <h1>韩磊</h1>
-                        <p>前端开发工程师</p>
-                        <hr>
-                        <dl>
-                            <dt>年龄</dt>
-                            <dd>24</dd>
-                            <dt>所在城市</dt>
-                            <dd>上海</dd>
-                            <dt>邮箱</dt>
-                            <dd>2529670555@qq.com</dd>
-                            <dt>手机</dt>
-                            <dd>15000039331</dd> 
-                        </dl>
-                    </div>
+                    <span class="welcome">Hello
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>韩磊</h1>
+                    <p>前端开发工程师</p>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>24</dd>
+                        <dt>所在城市</dt>
+                        <dd>上海</dd>
+                        <dt>邮箱</dt>
+                        <dd>2529670555@qq.com</dd>
+                        <dt>手机</dt>
+                        <dd>15000039331</dd> 
+                    </dl>  
                 </div>
             </div>
-                <footer class="media">
-                    <a href="#"><img src="#" alt="#"></a>
-                    <a href="#"><img src="#" alt="#"></a>
-                    <a href="#"><img src="#" alt="#"></a>
-                    <a href="#"><img src="#" alt="#"></a>
-                    <a href="#"><img src="#" alt="#"></a>
-                    <a href="#"><img src="#" alt="#"></a>
-                    <a href="#"><img src="#" alt="#"></a>
-                </footer>
-            </div>
+            <footer class="media">
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-jianshu"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-weibo-copy"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-douban"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-wushanguanwangziti-"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-shiliangzhinengduixiang-07"></use>
+                        </svg>
+                    </a>
+            </footer>
         </div>
-        <a href="#" class="button">下载PDF简历</a>
+        <a href="./resume.pdf" class="button">下载PDF简历</a>
         <P>
                 Hello! I’m Robert Smith. <br>
                 Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.
